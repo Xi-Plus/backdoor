@@ -1,7 +1,7 @@
 <?php
 include("config.php");
+echo file_get_contents($config["codefile"]);
 if(@$_GET["pwd"]==$config["password"]){
-	echo file_get_contents($config["codefile"]);
-	unlink($config["codefile"]);
+	file_put_contents($config["codefile"],"");
 }
 ?>

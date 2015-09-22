@@ -10,7 +10,7 @@ if(isset($_POST["add"])){
 	file_put_contents($config["codefile"],$content);
 }
 if(isset($_POST["delete"])){
-	unlink($config["codefile"]);
+	file_put_contents($config["codefile"],"");
 }
 ?>
 Now/Replace:<br>
