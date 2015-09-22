@@ -36,3 +36,8 @@ Add:<br>
 <input type="hidden" name="delete">
 <input type="submit" value="Delete All">
 </form>
+
+Last Result:<br>
+<pre><code>
+<?php echo @file_get_contents("result/last.txt"); ?>
+</code></pre>
